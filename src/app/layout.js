@@ -1,16 +1,21 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Pinterest",
-  description: "The Clone",
+    title: "Pinterest",
+    description: "The Clone",
+    favicon: "img/favicon.png",
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
-  );
+export default function RootLayout({children}) {
+    return (
+        <html lang="en">
+            <head>
+                <title>Pinterest</title>
+                <link rel="icon" href="/favicon.ico" sizes="any"/>
+            </head>
+            <body className="text-gray-900">
+                {children}
+            </body>
+        </html>
+    );
 }
