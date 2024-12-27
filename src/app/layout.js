@@ -1,4 +1,5 @@
 import "./globals.css";
+import TopBar from "@/components/TopBar";
 
 export const metadata = {
     title: "Pinterest",
@@ -14,6 +15,7 @@ export default function RootLayout({children}) {
                 <link rel="icon" href="/favicon.ico" sizes="any"/>
             </head>
             <body className="text-gray-900">
+            <TopBar />
                 {children}
             </body>
         </html>

@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "Maya Esar",
+    "username": "mayaesar",
+    "profile_img": "https://i.pinimg.com/736x/92/70/02/927002368dfb5a96427ae990838dd112.jpg",
+    "banner_img": "https://i.pinimg.com/736x/cd/1b/00/cd1b00568f4944a4a00675c457542a4a.jpg",
+    "followers": 17,
+    "following": 5,
+    "monthly": 256,
+    "bio": "Web Developer <3",
+    "post_ids": [1,4,6],
+    "saved_ids": [2,3,7]
+  }
+]
