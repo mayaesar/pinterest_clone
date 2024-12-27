@@ -1,4 +1,3 @@
-import { Faker, en, faker } from '@faker-js/faker';
 
 export default function ProfileHero({user}) {
 
@@ -19,7 +18,7 @@ export default function ProfileHero({user}) {
                     <p className="text-gray-500">{user.monthly} monthly views</p>
                 </div>
                 <p className="py-3 w-96">{user.bio}</p>
-                <p className="inline-block bg-gray-300 py-2 px-3 rounded-full text-sm font-semibold">Edit profile</p>
+                <p className="inline-block bg-gray-200 py-3 px-4 rounded-full text-sm font-semibold">Edit profile</p>
             </div>
             <div>
                 <img src={user.banner_img } alt="profile image" className="rounded-2xl w-[700px] h-[350px]"/>

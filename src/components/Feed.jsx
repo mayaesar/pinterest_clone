@@ -20,8 +20,8 @@ export default function Feed() {
         <section className="px-20 py-20">
             <div className="grid gap-4 items-start grid-cols-5">
                 {
-                    columns.map(column => (
-                        <div className="flex flex-col gap-4">
+                    columns.map((column, index) => (
+                        <div className="flex flex-col gap-4" key={index}>
                             {
                                 column.map(post => (
                                     <ImageFeedDisplay image={post} key={post.id} />

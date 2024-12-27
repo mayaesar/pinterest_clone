@@ -1,7 +1,7 @@
 'use client'
 
 import {useCallback, useMemo, useState} from "react";
-import posts from "../../mocks/posts.json";
+import posts from "@/../mocks/posts.json";
 import ImageFeedDisplay from "@/components/ImageFeedDisplay";
 
 export default function DisplayProfileContent({user}) {
@@ -38,7 +38,7 @@ export default function DisplayProfileContent({user}) {
                             <div className="flex flex-col gap-4" key={index}>
                                 {
                                     column.map(post => (
-                                        <ImageFeedDisplay image={post.link} key={post.id} />
+                                        <ImageFeedDisplay image={post} key={post.id} />
                                     ))
                                 }
                             </div>
