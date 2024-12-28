@@ -3,6 +3,7 @@ import profile from "@/../mocks/users.json";
 import posts from "@/../mocks/posts.json";
 import ButtonBack from "@/components/ButtonBack";
 import Link from "next/link";
+import CommentDisplay from "@/components/CommentDisplay";
 
 
 
@@ -12,7 +13,7 @@ export default async function Page({params}) {
     const {id: postId} = await params;
     const post = posts.find(p => p.id === Number(postId));
 
-    const user = profile.find(u => u.id === Number(post.user));
+    const user = profile.find(u => u.id === Number(post.user_id));
 
     return (
         <section className='max-w-screen-xl w-full mx-auto mt-16 flex items-start gap-4'>
@@ -45,7 +46,13 @@ export default async function Page({params}) {
                         {post.comments.length > 0 ? (
                             <div>
                                 <p> {post.comments.length} comments </p>
-                                <div>Add display for comments</div>
+                                <div className="grid gap-4 mt-4">
+                                    {
+                                        post.comments.map((comment, index) => (
+                                            <CommentDisplay key={index} comment={comment} />
+                                        ))
+                                    }
+                                </div>
                             </div>
                         ) : (
                             <p>add a comment</p>

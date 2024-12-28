@@ -5,14 +5,16 @@
     "title": "Crochet ducks",
     "description" : "",
     "reactions" : 5,
-    "user": 1,
+    "user_id": 1,
     "comments": [
       {
         "user_id": 1,
+        "date": "3h ago",
         "comment": "cool!"
       },
       {
         "user_id": 1,
+        "date": "3h ago",
         "comment": "Where can I get?"
       }
     ]
@@ -23,7 +25,7 @@
     "title": "Wave carpets",
     "description" : "",
     "reactions" : 2,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -32,7 +34,7 @@
     "title": "Balloon dog",
     "description" : "blue dog",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -41,7 +43,7 @@
     "title": "Jelly fish bag",
     "description" : "DIY project ideas",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -50,7 +52,7 @@
     "title": "Desk set up",
     "description" : "",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -59,7 +61,7 @@
     "title": "Cute outfit",
     "description" : "knit sweater",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -68,7 +70,7 @@
     "title": "Leaf rugs",
     "description" : "",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -77,7 +79,7 @@
     "title": "Europe",
     "description" : "",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -86,7 +88,7 @@
     "title": "animated desk",
     "description" : "",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   },
   {
@@ -95,10 +97,11 @@
     "title": "Creamic brunch",
     "description" : "Tick Tack Toe breakfast plates DIY",
     "reactions" : 3,
-    "user": 1,
+    "user_id": 1,
     "comments": [
       {
         "user_id": 1,
+        "date": "2024-11-30",
         "comment": "Love the avocado toast"
       }
     ]
@@ -109,10 +112,11 @@
     "title": "OOTD",
     "description" : "crochet top, Mirror selfie",
     "reactions" : 5,
-    "user": 1,
+    "user_id": 1,
     "comments": [
       {
         "user_id": 1,
+        "date": "01-04",
         "comment": "Where did you get the shoes??"
       }
     ]
@@ -123,7 +127,7 @@
     "title": "DIY hoodie",
     "description" : "Painted hoodie ideas",
     "reactions" : 0,
-    "user": 1,
+    "user_id": 1,
     "comments": []
   }
 ]

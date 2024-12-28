@@ -1,9 +1,11 @@
-import {PiBell, PiMagnifyingGlass, PiPinterestLogoFill} from "react-icons/pi";
+import {PiBell, PiGear, PiPinterestLogoFill} from "react-icons/pi";
 import Link from 'next/link';
 import SearchBar from "@/components/SearchBar";
+import SettingsDropdown from "@/components/SettingsDropdown";
 
 
-export default function TopBar(props) {
+export default function TopBar({currentUser}) {
+
 
     return(
         <section className="flex items-center p-4 gap-6">
@@ -19,6 +21,7 @@ export default function TopBar(props) {
                     src="https://i.pinimg.com/736x/92/70/02/927002368dfb5a96427ae990838dd112.jpg" alt="profile image"
                     className="rounded-full size-12"/> </Link>
             </div>
+            <SettingsDropdown />
         </section>
     )
 }
