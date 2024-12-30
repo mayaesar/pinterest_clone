@@ -2,7 +2,7 @@
 export default function ProfileHero({user}) {
 
     return(
-        <section className="flex px-32 py-20 justify-between">
+        <section className="flex flex-col-reverse md:flex-row gap-3 mb-12">
             <div>
                 <div className="flex gap-6 items-center py-2">
                     <img src={user.profile_img} alt="profile image" width={120} height={120}
@@ -18,10 +18,10 @@ export default function ProfileHero({user}) {
                     <p className="text-gray-500">{user.monthly} monthly views</p>
                 </div>
                 <p className="py-3 w-96">{user.bio}</p>
-                <p className="inline-block bg-gray-200 py-3 px-4 rounded-full text-sm font-semibold">Edit profile</p>
+                {/*<p className="inline-block bg-gray-200 py-3 px-4 rounded-full text-sm font-semibold">Edit profile</p>*/}
             </div>
             <div>
-                <img src={user.banner_img } alt="profile image" className="rounded-2xl w-[700px] h-[350px]"/>
+                <img src={user.banner_img } alt="profile image" className="rounded-2xl w-[700px] h-[350px] object-cover"/>
             </div>
         </section>
     )

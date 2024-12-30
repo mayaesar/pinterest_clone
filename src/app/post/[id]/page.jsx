@@ -5,9 +5,6 @@ import ButtonBack from "@/components/ButtonBack";
 import Link from "next/link";
 import CommentDisplay from "@/components/CommentDisplay";
 
-
-
-
 export default async function Page({params}) {
 
     const {id: postId} = await params;
@@ -16,9 +13,9 @@ export default async function Page({params}) {
     const user = profile.find(u => u.id === Number(post.user_id));
 
     return (
-        <section className='max-w-screen-xl w-full mx-auto mt-16 flex items-start gap-4'>
+        <section className='flex items-start flex-col sm:flex-row gap-4 max-w-screen-xl w-full mx-auto mt-16 px-3 md:px-6 pb-6'>
             <ButtonBack />
-            <div className='rounded-2xl grid grid-cols-2 gap-2 border border-gray-300 overflow-hidden'>
+            <div className='rounded-2xl grid grid-cols-1 sm:grid-cols-2 gap-2 border border-gray-300 overflow-hidden'>
                 <div>
                     <img src={post.link} alt={post.title}
                          loading="lazy"

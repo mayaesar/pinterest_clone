@@ -1,6 +1,6 @@
 'use client'
 
-import {useCallback, useMemo, useState} from "react";
+import {useCallback, useEffect, useMemo, useState} from "react";
 import posts from "@/../mocks/posts.json";
 import ImageFeedDisplay from "@/components/ImageFeedDisplay";
 import {cn} from "@/utils/cn";
@@ -27,11 +27,32 @@ export default function DisplayProfileContent({user}) {
         return columns;
     }, [userPosts]);
 
-    const columns = useMemo(() => generateColumns(5), [generateColumns]);
+    const [columns, setColumns] = useState(generateColumns(5));
+
+    const generateLayout = () => {
+        const width = window.innerWidth;
+
+        if (width > 1024) {
+            setColumns(generateColumns(5));
+        } else if (width > 640) {
+            setColumns(generateColumns(3));
+        } else {
+            setColumns(generateColumns(2));
+        }
+    }
+
+    useEffect(() => {
+        generateLayout();
+        window.addEventListener("resize", generateLayout);
+
+        return () => {
+            window.removeEventListener("resize", generateLayout);
+        };
+    }, []);
 
     return(
         <section>
-            <div className="flex justify-center gap-4 text-xl ">
+            <div className="flex justify-center gap-4 text-xl mb-6">
                 <button
                     onClick={() => setDisplay("created")}
                     className={cn("px-4 py-2", {
@@ -49,8 +70,8 @@ export default function DisplayProfileContent({user}) {
                     Saved
                 </button>
             </div>
-            <section className="px-20 py-20">
-                <div className="grid gap-4 items-start grid-cols-5">
+            <section>
+                <div className="grid gap-4 items-start grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                     {
                         columns.map((column, index) => (
                             <div className="flex flex-col gap-4" key={index}>

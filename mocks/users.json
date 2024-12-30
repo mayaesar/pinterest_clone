@@ -10,5 +10,29 @@
     "monthly": 256,
     "bio": "Web Developer <3",
     "saved_ids": [2,3,7]
+  },
+  {
+    "id": 2,
+    "name": "Hannah Montana",
+    "username": "hannah123",
+    "profile_img": "https://i.pinimg.com/736x/d8/01/f5/d801f56423ba8228c1bfacd58c48c15b.jpg",
+    "banner_img": "https://i.pinimg.com/736x/b8/2e/bf/b82ebfc03bdacae69cfa123d1897d491.jpg",
+    "followers": "400k",
+    "following": 2,
+    "monthly": "5.5M",
+    "bio": "Best of both worlds",
+    "saved_ids": [4,6,8,9,10]
+  },
+  {
+    "id": 3,
+    "name": "Maya Esar",
+    "username": "mayaesar",
+    "profile_img": "https://i.pinimg.com/736x/92/70/02/927002368dfb5a96427ae990838dd112.jpg",
+    "banner_img": "https://i.pinimg.com/736x/cd/1b/00/cd1b00568f4944a4a00675c457542a4a.jpg",
+    "followers": 17,
+    "following": 5,
+    "monthly": 256,
+    "bio": "Web Developer <3",
+    "saved_ids": [2,3,7]
   }
 ]

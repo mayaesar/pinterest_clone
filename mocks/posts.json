@@ -129,5 +129,14 @@
     "reactions" : 0,
     "user_id": 1,
     "comments": []
+  },
+  {
+    "id": 13,
+    "link": "https://i.pinimg.com/736x/86/23/20/8623209167e884b0b483c8fb74845b0e.jpg",
+    "title": "cool nail polish",
+    "description" : "",
+    "reactions" : 0,
+    "user_id": 1,
+    "comments": []
   }
 ]
