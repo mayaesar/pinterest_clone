@@ -17,11 +17,11 @@ export default function Feed() {
     const columns = useMemo(() => generateColumns(5), [generateColumns]);
 
     return (
-        <section className="px-20 py-20">
-            <div className="grid gap-4 items-start grid-cols-5">
+        <section className="w-full max-w-screen-xl mx-auto px-3 md:px-6">
+            <div className="grid gap-2 md:gap-4 items-start grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                 {
                     columns.map((column, index) => (
-                        <div className="flex flex-col gap-4" key={index}>
+                        <div className="flex flex-col gap-2 md:gap-4" key={index}>
                             {
                                 column.map(post => (
                                     <ImageFeedDisplay image={post} key={post.id} />
