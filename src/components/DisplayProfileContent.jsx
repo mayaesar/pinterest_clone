@@ -43,6 +43,9 @@ export default function DisplayProfileContent({user}) {
 
     useEffect(() => {
         generateLayout();
+    }, [display]);
+
+    useEffect(() => {
         window.addEventListener("resize", generateLayout);
 
         return () => {
@@ -51,7 +54,7 @@ export default function DisplayProfileContent({user}) {
     }, []);
 
     return(
-        <section>
+        <section className="pb-6">
             <div className="flex justify-center gap-4 text-xl mb-6">
                 <button
                     onClick={() => setDisplay("created")}
@@ -71,7 +74,7 @@ export default function DisplayProfileContent({user}) {
                 </button>
             </div>
             <section>
-                <div className="grid gap-4 items-start grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+                <div className="grid gap-2 md:gap-4 items-start grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                     {
                         columns.map((column, index) => (
                             <div className="flex flex-col gap-4" key={index}>
